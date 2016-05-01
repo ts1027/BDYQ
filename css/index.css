@@ -443,9 +443,9 @@ body {
   .nav .nav1 .follow-head .obj-ship {
     width: 224px;
     height: 209px;
-    background-size: 190px;
+    background-size: 165px;
     background-repeat: no-repeat;
-    top: -148px;
+    top: -128px;
     left: 82px;
   }
   .nav .nav1 .follow-head .bottom .center .xia {
@@ -708,7 +708,7 @@ body {
   .nav .nav3 .bottom-bg .nav2-nei .top .top-left .y-ain {
     background-size: 32px;
     margin-top: -25px;
-    margin-left: 29px;
+    margin-left: 22px;
   }
   .nav .nav3 .bottom-bg .nav2-nei .top .top-left .text {
     margin-left: 76px;
@@ -723,9 +723,9 @@ body {
     margin-bottom: 6px;
   }
   .nav .nav3 .bottom-bg .nav2-nei .top .top-left .text p {
-    font-size: 15px;
+    font-size: 12px;
     letter-spacing: 1px;
-    line-height: 28px;
+    line-height: 13px;
     opacity: .8;
   }
   .nav .nav3 .bottom-bg .nav2-nei .top .p3 {
@@ -793,7 +793,7 @@ body {
     margin-left: 32px;
   }
   .nav .nav4 .nav2-nei .top .p4 .text {
-    margin-left: 76px;
+    margin-left: 99px;
     margin-top: -20px;
     text-align: left;
   }
