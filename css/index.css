@@ -676,6 +676,7 @@ body {
   }
 }
 .nav .nav3 {
+  width: 100%;
   background: url(../images/banner3.jpg);
 }
 .nav .nav3 .bottom-bg {
@@ -694,6 +695,9 @@ body {
   background-position: center 134px;
 }
 @media screen and (max-width: 768px) {
+  .nav .nav3 .bottom-bg .nav2-nei {
+    width: 100%;
+  }
   .nav .nav3 .bottom-bg .nav2-nei .top .top-left {
     margin-left: 0;
     margin-top: 40px;
@@ -702,7 +706,7 @@ body {
     background-position: 0 41px;
   }
   .nav .nav3 .bottom-bg .nav2-nei .top .top-left .y-ain {
-    background-size: 50px;
+    background-size: 32px;
     margin-top: -25px;
     margin-left: 29px;
   }
@@ -712,7 +716,7 @@ body {
     text-align: left;
   }
   .nav .nav3 .bottom-bg .nav2-nei .top .top-left .text h4 {
-    font-size: 22px;
+    font-size: 19px;
     font-weight: 400;
     letter-spacing: 2px;
     line-height: 24px;
@@ -780,13 +784,13 @@ body {
     margin-left: 0;
     margin-top: 40px;
     width: 100%;
-    background-size: 200px;
-    background-position: 0 41px;
+    background-size: 157px;
+    background-position: -2px 56px;
   }
   .nav .nav4 .nav2-nei .top .p4 .y-ain {
-    background-size: 50px;
+    background-size: 39px;
     margin-top: -25px;
-    margin-left: 29px;
+    margin-left: 32px;
   }
   .nav .nav4 .nav2-nei .top .p4 .text {
     margin-left: 76px;
@@ -794,16 +798,16 @@ body {
     text-align: left;
   }
   .nav .nav4 .nav2-nei .top .p4 .text h4 {
-    font-size: 22px;
+    font-size: 21px;
     font-weight: 400;
     letter-spacing: 2px;
-    line-height: 24px;
+    line-height: 26px;
     margin-bottom: 6px;
   }
   .nav .nav4 .nav2-nei .top .p4 .text p {
     font-size: 15px;
     letter-spacing: 1px;
-    line-height: 28px;
+    line-height: 18px;
     opacity: .8;
   }
   .nav .nav4 .nav2-nei .top .top-right {
