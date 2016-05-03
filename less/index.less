@@ -158,30 +158,41 @@ body {
       transition: all .5s;
     }
   }
-  @media screen and (max-width: 768px){
-    & .header-nei{
-      display: none;
-    }
-     .header-sm{
-       padding: 0 20px;
-       display: block;
-       .bak:hover{
-         opacity: 1;
-       }
-     }
-  }
   @media screen and (min-width:769px) and (max-width: 1000px){
     & .header-nei .mala-fl{
         display: none;
     }
   }
 }
+@media screen and (max-width: 768px){
+  .header{
+    height:40px;
+    & .header-nei{
+        padding: 0 20px;
+        display: block;
+        height:40px;
+        .logo{
+            margin-top: 5px;
+            background-size: 75px;
+            height:30px;
+        }
+        .bak{
+            margin-top: 8px;
+            background-size: 23px;
+            background-repeat: no-repeat;
+        }
+        .bak:hover{
+            opacity: 1;
+        }
+    }
+  }
+}
 /*banner*/
-  .nav{
+.nav{
   /*第一屏*/
   & .nav1 {
      background: url(../images/banner2.jpg);
-    transition: all 1s;
+     transition: all 1s;
     .top {
       position: absolute;
       width: 100%;
@@ -377,18 +388,6 @@ body {
         position: absolute;
         top: -191px;
       }
-      .active .obj-ship{
-          animation: ship .6s linear forwards;
-      }
-      /*船*/
-      @keyframes ship {
-            0%{
-              left: 100px;
-            }
-            100%{
-              left:126px;
-            }
-      }
     }
     /*小箭头*/
     .bottom{
@@ -477,7 +476,6 @@ body {
       }
     }
   }
-
 
   & .nav2{
     transition: all 1s;
@@ -853,7 +851,35 @@ body {
     }
   }
 
-
 }
 
+.swiper-slide-active .obj-ship{
+    animation: ship 1s linear forwards;
+}
+/*船*/
+@keyframes ship {
+    0%{
+        left: 100px;
+    }
+    100%{
+        transform:translateX(25px);
+    }
+}
 
+.swiper-slide-active .top-left{
+    animation:left .8s linear forwards;
+}
+.swiper-slide-active .top-right{
+    animation:right .8s linear forwards;
+}
+
+@keyframes left {
+    100%{
+        transform: translateX(15px);
+    }
+}
+@keyframes right {
+    100%{
+        transform: translateX(-15px);
+    }
+}

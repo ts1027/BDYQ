@@ -155,21 +155,32 @@ body {
   opacity: .8;
   transition: all .5s;
 }
-@media screen and (max-width: 768px) {
-  .header .header-nei {
-    display: none;
-  }
-  .header .header-sm {
-    padding: 0 20px;
-    display: block;
-  }
-  .header .header-sm .bak:hover {
-    opacity: 1;
-  }
-}
 @media screen and (min-width: 769px) and (max-width: 1000px) {
   .header .header-nei .mala-fl {
     display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    height: 40px;
+  }
+  .header .header-nei {
+    padding: 0 20px;
+    display: block;
+    height: 40px;
+  }
+  .header .header-nei .logo {
+    margin-top: 5px;
+    background-size: 75px;
+    height: 30px;
+  }
+  .header .header-nei .bak {
+    margin-top: 8px;
+    background-size: 23px;
+    background-repeat: no-repeat;
+  }
+  .header .header-nei .bak:hover {
+    opacity: 1;
   }
 }
 /*banner*/
@@ -346,7 +357,6 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  /*船*/
 }
 .nav .nav1 .follow-head .obj-hill-2 {
   width: 63px;
@@ -379,17 +389,6 @@ body {
   left: 100px;
   position: absolute;
   top: -191px;
-}
-.nav .nav1 .follow-head .active .obj-ship {
-  animation: ship .6s linear forwards;
-}
-@keyframes ship {
-  0% {
-    left: 100px;
-  }
-  100% {
-    left: 126px;
-  }
 }
 .nav .nav1 .bottom {
   position: absolute;
@@ -821,5 +820,33 @@ body {
   }
   .nav .nav4 .nav2-nei .bottom4 a {
     text-align: center;
+  }
+}
+.swiper-slide-active .obj-ship {
+  animation: ship 1s linear forwards;
+}
+/*船*/
+@keyframes ship {
+  0% {
+    left: 100px;
+  }
+  100% {
+    transform: translateX(25px);
+  }
+}
+.swiper-slide-active .top-left {
+  animation: left .8s linear forwards;
+}
+.swiper-slide-active .top-right {
+  animation: right .8s linear forwards;
+}
+@keyframes left {
+  100% {
+    transform: translateX(15px);
+  }
+}
+@keyframes right {
+  100% {
+    transform: translateX(-15px);
   }
 }
